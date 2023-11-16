@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar nav{
+    display: flex;
+    justify-content: center;
+}
+nav img{
+    margin-top: 15px;
+    width: 80px;
+    height: auto;
+}
+.toptext{
+    margin-top: 40px;
+}
+.toptext a{
+    margin: 40px;
+    font-weight: bold;
+    transition: 0.2s;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.toptext a:hover{
+    color: red;
+}
+.toptext .active{
+    border-bottom: 4px solid red;
+}
+.mmenu{
+    display: none;
+}
+
+
+
+.contactcont .contcube{
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+    height: 90vh;
+}
+.contactcont .cinfo{
+    background-color: red;
+    height: 675px;
+    width: 600px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+.cinfo h1{
+    color: #fff;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-bottom: 3px solid #fff;
+    width: 500px;
+}
+.cinfo h2{
+    color: #fff;
+    margin: 20px 60px;
+    font-size: 20px;
+
+}
+.cinfo h2 i{
+    color: #fff;
+    padding-right: 10px;
+}
+.contimg img{
+    width: 900px;
+    height: auto;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.bottom{
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+    padding-bottom: 30px;
+}
+.bottom div{
+    padding-top: 50px;
+    text-align: center;
+}
+.bottom div p{
+    padding: 10px 0;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 999px) {
+    .navbar .toptext{
+        display: none;
+    }
+    .navbar img{
+        width: 45px;
+        height: 35px;
+    }
+
+
+
+    .mmenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+    
+    .menu-button {
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #000000;
+        margin: 4px 0;
+        transition: 0.4s;
+        z-index: 3;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .menu.active {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        background-color: #fff;
+        left: 15px;
+        top: 40px;
+        transition: 1s;
+        border-radius: 10px;
+    }
+    
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        width: 150px;
+        border: 1px solid gray;
+        transition: 1s;
+        border-radius: 10px;
+    }
+    
+    .menu li {
+        margin: 15px 0;
+        text-align: center;
+        transition: 1s;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 18px;
+    }
+    .menu .mactive{
+        border-bottom: 3px solid red;
+    }
+    .contactcont .contcube{
+        margin-top: 10vh;
+    }
+    .contimg img{
+        display: none;
+    }
+    .contactcont .cinfo{
+        background-color: red;
+        width: 350px;
+        height: 500px;
+        border-radius: 20px;
+    }
+    .cinfo h1{
+
+        font-size: 25px;
+        margin-left: 30px;
+        margin-top: 50px;
+        border-bottom: 3px solid #fff;
+        width: 300px;
+    }
+    .cinfo h2{
+        color: #fff;
+        margin: 10px 40px;
+        font-size: 18px;
+    
+    }
+
+    
+
+
+
+
+
+    .bottom .mbot{
+        display: block;
+        margin: auto;
+  
+     }
+     .bottom .infos{
+        width: 250px;
+        margin-left: 15px;
+    }
+    .bottom .infos h1{
+        font-size: 25px;
+        border-bottom: 3px solid aliceblue;
+    }
+    .bottom .infos h2{
+        font-size: 15px;
+    }
+    .bottom .infos i{
+        padding-right: 5px;
+        font-size: 15px;
+    }
+    .bottom .social{
+       text-align: center;
+       font-size: 40px;
+       padding: 20px 0;
+    }
+    .bottom p{
+        font-size: 12px;
+    }
+}

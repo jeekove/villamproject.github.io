@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar nav{
+    display: flex;
+    justify-content: center;
+}
+nav img{
+    margin-top: 15px;
+    width: 80px;
+    height: auto;
+}
+.toptext{
+    margin-top: 40px;
+}
+.toptext a{
+    margin: 40px;
+    font-weight: bold;
+    transition: 0.2s;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.toptext a:hover{
+    color: red;
+}
+.toptext .active{
+    border-bottom: 4px solid red;
+}
+.mmenu{
+    display: none;
+}
+.coming{
+    height: 60vh;
+}
+.coming div{
+    margin: auto;
+    margin-top: 300px;
+    width: 300px;
+}
+.coming div h1{
+    border-top: 8px solid red;
+    padding-top: 10px;
+    font-size: 70px;
+}
+.coming div h2{
+    position: relative;
+    font-size: 100px;
+    top: -35px;
+    border-bottom: 8px solid red;
+}
+.bottom{
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+    padding-bottom: 30px;
+}
+.bottom .mbot{
+    padding-top: 70px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+.bottom .infos{
+    width: 500px;
+    margin-right: 800px;
+}
+.bottom .infos h1{
+    border-bottom: 4px solid aliceblue;
+}
+.bottom .infos h2{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.bottom .infos i{
+    padding-right: 10px;
+}
+.bottom .social{
+    font-size: 50px;
+}
+.bottom .social i{
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s;
+}
+.bottom .social i:hover{
+    color: rgb(151, 0, 0);
+    transition: 0.3s;
+}
+.bottom p{
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 999px) {
+    body{
+    }
+    
+    .navbar .toptext{
+        display: none;
+    }
+    .navbar img{
+        width: 45px;
+        height: 35px;
+    }
+
+    .mmenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+    
+    .menu-button {
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #000000;
+        margin: 4px 0;
+        transition: 0.4s;
+        z-index: 3;
+    }
+    
+    .menu {
+        display: none;
+        transition: display 1s;
+
+    }
+    
+    .menu.active {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        background-color: #fff;
+        left: 15px;
+        top: 40px;
+        transition: 1s;
+        border-radius: 10px;
+    }
+    
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        width: 150px;
+        border: 1px solid gray;
+        transition: 1s;
+        border-radius: 10px;
+    }
+    
+    .menu li {
+        margin: 15px 0;
+        text-align: center;
+        transition: 1s;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 18px;
+    }
+    .menu .mactive{
+        border-bottom: 3px solid red;
+    }
+
+    .coming{
+        height: 70vh;
+    }.coming div{
+        margin-top: 55%;
+    }
+
+
+
+
+    .bottom .mbot{
+        display: block;
+        margin: auto;
+    }
+     .bottom .infos{
+        width: 250px;
+        margin-left: 15px;
+    }
+    .bottom .infos h1{
+        font-size: 25px;
+        border-bottom: 3px solid aliceblue;
+    }
+    .bottom .infos h2{
+        font-size: 15px;
+    }
+    .bottom .infos i{
+        padding-right: 5px;
+        font-size: 15px;
+    }
+    .bottom .social{
+       text-align: center;
+       font-size: 40px;
+       padding: 20px 0;
+    }
+    .bottom p{
+        font-size: 12px;
+    }
+    
+}
+  

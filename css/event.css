@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar nav{
+    display: flex;
+    justify-content: center;
+}
+nav img{
+    margin-top: 15px;
+    width: 80px;
+    height: auto;
+}
+.toptext{
+    margin-top: 40px;
+}
+.toptext a{
+    margin: 40px;
+    font-weight: bold;
+    transition: 0.2s;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.toptext a:hover{
+    color: red;
+}
+.toptext .active{
+    border-bottom: 4px solid red;
+}
+.mmenu{
+    display: none;
+}
+.event{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.events .cubeevent{
+    display: flex;
+    justify-content: center;
+    transition: 0.2s;
+    margin: 30px 300px;
+}
+.cubeevent:hover{
+    transition: 0.2s;
+    
+}
+.cubeevent .etext{
+    width: 300px;
+    margin-left: 30px;
+    width: 650px;
+}
+.etext h1{
+    margin: 10px 0;
+}
+.etext span{
+    color: rgb(97, 97, 97);
+    font-size: 20px;
+}
+.etext p{
+    font-size: 20px;
+}
+.cubeevent img{
+    height: auto;
+    width: 350px;
+    border-radius: 20px;
+}
+.divider{
+    flex-grow: 1;
+    height: 2px;
+    background-color: #ccc;
+    margin: auto;
+    margin-left: 24%;
+    margin-right: 24%;
+}
+.bottom{
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+    padding-bottom: 30px;
+}
+.bottom .mbot{
+    padding-top: 70px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+.bottom .infos{
+    width: 500px;
+    margin-right: 800px;
+}
+.bottom .infos h1{
+    border-bottom: 4px solid aliceblue;
+}
+.bottom .infos h2{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.bottom .infos i{
+    padding-right: 10px;
+}
+.bottom .social{
+    font-size: 50px;
+}
+.bottom .social i{
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s;
+}
+.bottom .social i:hover{
+    color: rgb(151, 0, 0);
+    transition: 0.3s;
+}
+.bottom p{
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+@media (min-width: 320px) and (max-width: 999px) {
+    .navbar .toptext{
+        display: none;
+    }
+    .navbar img{
+        width: 45px;
+        height: 35px;
+    }
+
+    .mmenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+    
+    .menu-button {
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #000000;
+        margin: 4px 0;
+        transition: 0.4s;
+        z-index: 3;
+    }
+    
+    .menu {
+        display: none;
+        transition: display 1s;
+
+    }
+    
+    .menu.active {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        background-color: #fff;
+        left: 15px;
+        top: 40px;
+        transition: 1s;
+        border-radius: 10px;
+    }
+    
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        width: 150px;
+        border: 1px solid gray;
+        transition: 1s;
+        border-radius: 10px;
+    }
+    
+    .menu li {
+        margin: 15px 0;
+        text-align: center;
+        transition: 1s;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 18px;
+    }
+    .menu .mactive{
+        border-bottom: 3px solid red;
+    }
+    .event{
+        width: 400px;
+    }
+    .events .cubeevent{
+        position: relative;
+        display: block;
+        top: 50%;
+        left: -65%;
+        transform: translate(-50%, 0%);
+    }
+    .cubeevent img{
+        border-radius: 15px;
+        height: auto;
+        width: 320px;
+        display: block;
+        margin: auto; 
+    }
+    .cubeevent .etext{
+        position: relative;
+        left: -20px;
+        width: 350px;
+   
+    }
+    .etext h1{
+        font-size: 20px;
+        width: 320px;
+    }
+    .etext span{
+        font-size: 15px;
+    }
+    .etext p{
+        font-size: 15px;
+        width: 300px;
+    }
+    .divider{
+        flex-grow: 1;
+        height: 2px;
+        background-color: #ccc;
+        margin: 20px 30px;
+    }
+    .bottom .mbot{
+        display: block;
+        margin: auto;
+    }
+     .bottom .infos{
+        width: 250px;
+        margin-left: 15px;
+    }
+    .bottom .infos h1{
+        font-size: 25px;
+        border-bottom: 3px solid aliceblue;
+    }
+    .bottom .infos h2{
+        font-size: 15px;
+    }
+    .bottom .infos i{
+        padding-right: 5px;
+        font-size: 15px;
+    }
+    .bottom .social{
+       text-align: center;
+       font-size: 40px;
+       padding: 20px 0;
+    }
+    .bottom p{
+        font-size: 12px;
+    }
+}

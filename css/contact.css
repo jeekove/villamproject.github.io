@@ -6,6 +6,7 @@
 .navbar nav{
     display: flex;
     justify-content: center;
+    
 }
 nav img{
     margin-top: 15px;

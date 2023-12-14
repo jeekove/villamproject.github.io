@@ -5,45 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.webp">
     <script src="https://kit.fontawesome.com/2a016e7b9d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="navbar">
         <nav>
             <div class="toptext">
-               <a class="active">Föoldal</a>
-               <a>Események</a>
-               <a>Galéria</a>
+               <a  href="" class="active">Föoldal</a>
+               <a  href="/event.html">Események</a>
+               <a  href="/coming.html">Galéria</a>
             </div>
             <div class="imgc">
-               <img src="img/logo.png">
+                <a href="/index.html"><img src="img/logo.webp"></a>
             </div>
             <div class="toptext">
-                <a>Tagok</a>
-                <a>Statisztika</a>
-                <a>Elérhetöség</a>
+                <a  href="/coming.html">Tagok</a>
+                <a  href="/coming.html">Statisztika</a>
+                <a  href="/contact.html">Elérhetöség</a>
             </div>
         </nav>
+        <div class="mmenu">
+            <div class="menu-button" id="menuButton">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="" class="mactive">Föoldal</a></li>
+                    <li><a href="/event.html">Események</a></li>
+                    <li><a href="/coming.html">Galéria</a></li>
+                    <li><a href="/coming.html">Tagok</a></li>
+                    <li><a href="/coming.html">Statisztika</a></li>
+                    <li><a href="/contact.html">Elérhetöség</a></li>
+                </ul>
+            </div>
+        </div>
+            <script src="java/index.js"></script>
     </div>
     <div class="image-container">
-        <img id="image1" src="img/ifjusagineveles.png" alt="Kép 1">
-        <img id="image2" src="img/kimenekitesigyakorlat.png" alt="Kép 2">
-        <img id="image3" src="img/muszakimentes.png" alt="Kép 3">
+        <img id="image1" src="/img/karacsonymikulas.webp" alt="Kép 1">
+        <img id="image2" src="/img/tuzvedelmi.webp" alt="Kép 2">
+        <img id="image3" src="/img/ifjusagineveles.webp" alt="Kép 3">
         <div class="image-text" id="image-text">
-            <h1>Ifjúsági nevelés </h1>
+            <h1>Segítség nyújtás a Mikulásnak</h1>
+            <p>Mint az előző években, az idén is Egyesületünk segítségét kérte a  Mikulás. Hó hiányában tűzoltó autóval juttattuk célba a nagyszakálút sok gyermek és nem csak örömére...</p>
+        </div>
+        <div class="image-text" id="image-text2">
+            <h1>Tűzvédelmi felvilágosítás</h1>
+            <h2>2023.11.04</h2>
+            <p>A Keresztúri Gazdanapok rendezvénysorozat keretén belül csapatunk a mezőgazdasági munkálatok tűzvédelmi előírásairól...</p>
+        </div>
+        <div class="image-text" id="image-text3">
+            <h1>Ifjúsági nevelés</h1>
             <h2>2023.10.27</h2>
             <p>A Berde Mózes Unitárius Gimnázium meghívására csapatunk tagjai az iskola X. osztályosainak tartott előadást...</p>
         </div>
-        <div class="image-text" id="image-text2">
-            <h1>Kimenekítési gyakorlat</h1>
-            <h2>2023.10.19- Nagygalambfalva</h2>
-            <p>A Hivatásos Tűzoltóság által rendszeresen megszervezett szimuláción vett részt csapatunk a keresztúri önkormányzati tűzoltókkal közösen...</p>
-        </div>
-        <div class="image-text" id="image-text3">
-            <h1>Műszaki mentés </h1>
-            <h2>2023.09.17</h2>
-            <p>A kora esti órákban érkezett a riasztás csapatunkhoz, miszerint a kisgalambfalvi hídnál autóbaleset történt...</p>
-        </div>
+        <script src="java/index.js"></script>
     </div>
     <script src="java/index.js"></script>
     <div class="arrow">
@@ -84,38 +103,44 @@
         </div>
         </div>
     </div>
-    <div class="news">
+    <div class="new">
         <h1>Hírek</h1>
-        <div class="modul1">
-            <div class="news1">
-                <div class="newsimgcont">
-                <img src="img/tuzeset1.png">
+        <div class="moduls">
+            <div class="news">
+                <div class="squaimg">
+                   <img src="img/tuzeset1.webp">
                 </div>
-                <h1>Melléképület tűz</h1>
-                <p>2023.08.29</p>
+                <div class="bottext">
+                   <h1>Melléképület tűz</h1>
+                   <p>2023.08.29</p>
+                </div>
             </div>
-            <div class="news2">
-                <div class="newsimgcont">
-                <img  src="img/muszakimentes1.png">
+            <div class="news newm1">
+                <div class="rectimg">
+                <img  src="img/muszakimentes1.webp">
                 </div>
+                <div class="bottext">
                 <h1>Műszaki mentés</h1>
                 <p>2023.08.21 Kőrispatak</p>
-            </div>
-        </div>
-        <div class="modul2">
-            <div class="news1">
-                <div class="newsimgcont">
-                <img src="img/tuzeset.png">
                 </div>
+            </div>
+            <div class="news newb newm2">
+                <div class="rectimg">
+                <img src="img/tuzeset.webp">
+                </div>
+                <div class="bottext">
                 <h1>Tűzeset Székelyudvarhelyen</h1>
                 <p>2023.07.15</p>
-            </div>
-            <div class="news2">
-                <div class="newsimgcont">
-                <img src="img/muszakimentes2.png">
                 </div>
-                <h1>Műszaki mentés - fa dőlés</h1>
-                <p>2023.08.17 </p>
+            </div>
+            <div class="news newb newm3">
+                <div class="squaimg">
+                <img src="img/muszakimentes.webp">
+                </div>
+                <div class="bottext">
+                <h1>Műszaki mentés</h1>
+                <p>22023.09.17</p>
+                </div>
             </div>
         </div>
     </div>

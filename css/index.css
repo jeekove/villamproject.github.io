@@ -1,7 +1,15 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: main;
+}
+@font-face {
+    font-family: "main";
+    src: url(/fonts/main.ttf);
+}
+@font-face {
+    font-family: "titles";
+    src: url(/fonts/titles.ttf);
 }
 .navbar nav{
     display: flex;
@@ -9,15 +17,16 @@
 }
 nav img{
     margin-top: 15px;
-    width: 80px;
+    width: 65px;
     height: auto;
 }
 .toptext{
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .toptext a{
-    margin: 40px;
+    font-family: titles;
     font-weight: bold;
+    margin: 30px;
     transition: 0.2s;
     font-size: 20px;
 }
@@ -26,19 +35,25 @@ nav img{
     transition: 0.2s;
 }
 .toptext .active{
-    border-bottom: 4px solid red;
+    border-bottom: 3px solid rgb(255, 0, 0);
+}
+.mmenu{
+    display: none;
 }
 .image-container {
     position: relative;
-    top: 20px;
+    top: 30px;
     display: flex;
     justify-content: center;
+}
+.image-container:hover{
+    cursor: pointer;
 }
 #image1,#image2,#image3 {
     position: absolute;
     height: auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    width: 1400px;
+    width: 1300px;
     border-radius: 20px;
     transition: opacity 2s linear; 
     opacity: 0;
@@ -48,12 +63,15 @@ nav img{
 .image-text {
     position: absolute;
     font-size: 30px;
-    margin-top: 500px;
+    margin-top: 450px;
     color: white;
     padding: 5px;
     transition: opacity 2s linear; 
     opacity: 0; 
     z-index: 2; 
+}
+.image-text h1{
+    font-family: titles;
 }
 .image-text h2{
     color: aliceblue;
@@ -64,18 +82,25 @@ nav img{
     max-width: 1000px;
     margin-top: 30px;
 }
+.image-container button{
+    margin: 1vh auto;
+    border: none;
+    padding: 10px 30px;
+    font-size: 30px;
+    border-radius: 20px;
+}
 .arrow{
     display:none;
 }
 .aboutus{
     margin: auto;
-    width:  1400px;
+    width:  1300px;
     margin-top: 1000px;
     padding-bottom: 200px;
 }
 .aboutus h1{
     font-size: 50px;
-    border-bottom: 7px solid red;
+    border-bottom: 7px solid rgb(255, 57, 57);
 }
 .aboutus h2{
     margin-top: 10px;
@@ -87,19 +112,19 @@ nav img{
   }
 .stats{
     margin: auto;
-    width:  1400px;
+    width:  1300px;
     padding-bottom: 100px;
 }
 .stats h1{
     font-size: 50px;
-    border-bottom: 7px solid red;
+    border-bottom: 7px solid rgb(255, 57, 57);
 }
 .stats h1 span{
     position: relative;
     top: -7px;
     color: aliceblue;
     font-size: 20px;
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     padding: 8px 10px 8px 5px;
     border-radius: 20px
 }
@@ -141,160 +166,50 @@ nav img{
     display: block;
     font-size: 35px;
 }
-.news{
+.new{
     margin: auto;
-    width:  1400px;
+    width:  1300px;
     padding-bottom: 100px;
 }
-.news h1{
+.new h1{
     font-size: 50px;
-    border-bottom: 7px solid red;
+    border-bottom: 7px solid rgb(255, 57, 57);
 }
-.news .modul1{
-    margin-top: 20px;
+.moduls{
     display: flex;
-    justify-content: center;
-    height: 540px;
+    width: 1320px;
+    flex-wrap: wrap;
 }
-.news .modul1 div{
-    margin: 0 5px;
+.squaimg img{
+    height: 460px;
+    width: 460px;
 }
-.news .modul1 .news1 img{
-    width: 480px;
-    height: 480px;
-    border-radius: 10px;
-    transition: 0.3s;
+.rectimg img{
+    height: 460px;
+    width: 820px;
 }
-.news .modul1 .news1 img:hover{
-    filter: grayscale(100%);
-    width: 450px;
-    height: 450px;
-    margin-top: 10px;
-    margin-right: 15px;
-    margin-left: 15px;
-    transition: 0.3s;
+.news{
+    font-family: titles;
+    transition: 0.4s;
+    width: auto;
+    margin: 8px 5px;
 }
-.news .modul1 .news1 h1{
+.newb{
     position: relative;
+    top: -80px;
+}
+.bottext{
+    top: -100px;
+    position: relative;
+    color: #fff;
+    left: 30px;
+}
+.bottext h1{
     border: none;
-    color: white;
-    font-size: 32px;
-    top: -130px;
-    left: 40px;
-}
-.news .modul1 .news1 p{
-    position: relative;
-    border: none;
-    color: rgb(197, 197, 197);
-    font-size: 20px;
-    top: -130px;
-    left: 40px;
-}
-.news .modul1 .news2 img{
-    width: 880px;
-    height: 480px;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-.news .modul1 .news2 img:hover{
-    filter: grayscale(100%);
-    width: 830px;
-    height: 450px;
-    margin-top: 10px;
-    margin-right: 15px;
-    margin-left: 33px;
-    transition: 0.3s;
-}
-.news .modul1 .news2 h1{
-    position: relative;
-    border: none;
-    color: white;
-    font-size: 32px;
-    top: -130px;
-    left: 60px;
-}
-.news .modul1 .news2 p{
-    position: relative;
-    border: none;
-    color: rgb(197, 197, 197);
-    font-size: 20px;
-    top: -130px;
-    left: 60px;
-}
-.news .modul2{
-    position: relative;
-    top: -70px;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.news .modul2 div{
-    margin: 0 5px;
-}
-.news .modul2 .news1 img{
-    width: 880px;
-    height: 480px;
-    border-radius: 10px; 
-    transition: 0.3s;
-}
-.news .modul2 .news1 img:hover{
-    filter: grayscale(100%);
-    width: 830px;
-    height: 450px;
-    margin-top: 10px;
-    margin-right: 15px;
-    margin-left: 33px;
-    transition: 0.3s;
-}
-.news .modul2 .news1 h1{
-    position: relative;
-    border: none;
-    color: white;
-    font-size: 32px;
-    top: -130px;
-    left: 60px;
-}
-.news .modul2 .news1 p{
-    position: relative;
-    border: none;
-    color: rgb(197, 197, 197);
-    font-size: 20px;
-    top: -130px;
-    left: 60px;
-}
-.news .modul2 .news2 img{
-    width: 480px;
-    height: 480px;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-.news .modul2 .news2 img:hover{
-    filter: grayscale(100%);
-    width: 450px;
-    height: 450px;
-    margin-top: 10px;
-    margin-right: 15px;
-    margin-left: 15px;
-    transition: 0.3s;
-}
-.news .modul2 .news2 h1{
-    position: relative;
-    border: none;
-    color: white;
-    font-size: 32px;
-    top: -130px;
-    left: 40px;
-}
-.news .modul2 .news2 p{
-    position: relative;
-    border: none;
-    color: rgb(197, 197, 197);
-    font-size: 20px;
-    top: -130px;
-    left: 40px;
+    font-size: 35px;
 }
 .bottom{
-    background-color: rgb(255, 0, 0);
+    background: linear-gradient(45deg , #d52a1c,#0d3a54 );
     color: aliceblue;
     padding-bottom: 30px;
 }
@@ -305,7 +220,7 @@ nav img{
     margin-bottom: 50px;
 }
 .bottom .infos{
-    width: 500px;
+    width: 400px;
     margin-right: 800px;
 }
 .bottom .infos h1{
@@ -329,13 +244,49 @@ nav img{
     text-align: center;
     padding: 10px 0;
 }
-
-
-@media (min-width: 320px) and (max-width: 999px) {
-    body{
-        max-width: 400px;
+@media (min-width: 1100px){
+    .news:hover{
+       cursor: pointer;
+       scale: 0.9;
+       transition: 0.4s;
     }
-    
+}
+@media (max-width: 1600px) {
+    .toptext a{
+        margin: 20px;
+    }
+    #image1,#image2,#image3 {
+        width: 1200px;
+    }
+    .image-text {
+        margin-top: 400px;
+    }
+    .aboutus{
+        width:  1200px;
+    }
+    .stats{
+        width:  1200px;
+    }
+    .new{
+        width:  1200px;
+    }
+    .squaimg img{
+        height: 440px;
+        width: 440px;
+    }
+    .rectimg img{
+        height: 440px;
+        width: 730px;
+    }
+    .news{
+        margin: 8px 7px;
+    }
+    .bottom .infos{
+        margin-right: 630px;
+    }
+}
+
+@media (max-width: 1100px) {
     .navbar .toptext{
         display: none;
     }
@@ -343,53 +294,116 @@ nav img{
         width: 45px;
         height: 35px;
     }
+    .mmenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+    
+    .menu-button {
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #000000;
+        margin: 4px 0;
+        transition: 0.4s;
+        z-index: 3;
+    }
+    
+    .menu {
+        display: none;
+        transition: display 1s;
+    }
+    
+    .menu.active {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        background-color: #fff;
+        left: 15px;
+        top: 40px;
+        transition: 1s;
+        border-radius: 10px;
+    }
+    
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        width: 150px;
+        border: 1px solid gray;
+        transition: 1s;
+        border-radius: 10px;
+    }
+    
+    .menu li {
+        margin: 15px 0;
+        text-align: center;
+        transition: 1s;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 18px;
+    }
+    .menu .mactive{
+        border-bottom: 3px solid red;
+    }
+
+
     .image-container{
-        width: 350px; /* A konténer szélességét beállítjuk a képernyő szélességére vagy a kívánt szélességre. */
-        max-width: 500px; /* A kép maximális szélességét beállítjuk a konténer szélességére. */
-        padding-bottom: 160%; /* Ez 4:3-as arányt jelent (75% = 3 / 4). */
+        margin-top: 6vh;
+        width: 90%; 
+        height: 550px;
         position: relative;
         overflow: hidden;
         border-radius: 10px;
         margin: auto;
       }
-    .image-container img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Az "object-fit" tulajdonsággal a kép tartalmát a konténer méretéhez igazítjuk. */
-    }
+    #image1,#image2,#image3{
+        box-shadow: none;
+      }
+    .image-text{
+        position: absolute;
+        left: 50%;
+        transform: translateX( -50%);
+        top: -250px;
+        width: 70vw;
+      }
     .image-text h1{
         position: relative;
-        font-size: 28px;
-        left: 5px;
-        top: -60px;
+        top: 20vh;
+        font-size: 25px;
     }
     .image-text h2{
         position: relative;
+        top: 20vh;
         font-size: 15px;
-        left: 5px;
-        top: -60px;
     }
     .image-text p{
         position: relative;
+        top: 20vh;
         font-size: 15px;
-        left: 5px;
-        top: -60px;
-        max-width: 300px;
     }
     .arrow{
         position: relative;
         display: block;
         text-align: center;
-        top: 70px;
-
+        top: 15vh;
     }
     .arrow i{
         font-size: 40px;
     }
-
     .aboutus{
-        margin-top: 150px;
-        width:  350px;
+        margin-top: 200px;
+        width:  90%;
         padding-bottom: 100px;
     }
     .aboutus h1{
@@ -399,10 +413,8 @@ nav img{
     .aboutus h2{
         font-size: 16px;
     }
-
-
     .stats{
-        width: 350px;
+        width: 90%;
     }
     .stats h1{
         font-size: 30px;
@@ -434,124 +446,70 @@ nav img{
     .stats div h2{
         font-size: 23px;
     }
-
-
-
-    .news{
-        width: 350px;
+    .new{
+        margin: auto;
+        width:  90%;
+        padding-bottom: 100px;
     }
-    .news h1{
+    .new h1{
         font-size: 30px;
         border-bottom: 4px solid red;
     }
-    .news .modul1{
+    .moduls{
         display: block;
+        width: 330px;
+        flex-wrap: wrap;
+        margin: auto;
     }
-    .news .modul1 .news2{
-        position: relative;
-        top: -37px;
-    }
-    .news .modul2 .news2{
-        position: relative;
-        top: -65px;
-    }
-    .news .newsimgcont{
-        width: 350px;
-        max-width: 400px; 
-        height: 120px;
-        padding-bottom: 75%; 
+    .squaimg{
+        width: 330px;
+        height: 350px; 
         overflow: hidden;
-        border-radius: 15px;
+        border-radius: 10px;
     }
-    .news .modul1 div{
-        margin: 0 0px;
-    }
-    .news .modul2 div{
-        margin: 0 0px;
-    }
-    .news .modul2{
-        display: block;
-        top: 225px;
-    }
-
-    .news .modul1 .news1 img:hover{
-        width: 100%;
-        max-width: 100%; 
+    .rectimg{
+        width: 330px;
+        height: 350px; 
         overflow: hidden;
-        margin: 0;    
+        border-radius: 10px;
     }
-    .news .modul1 .news2 img:hover{
-        width: 350px;
-        max-width: 400px; 
-        height: 120px;
-        margin: 0; 
+    .newb{
+        position: relative;
+        top: 0;
     }
-    .news .modul2 .news1 img:hover{
-        width: auto;
-        height: auto;
-        margin: 0; 
+    .newm1{
+        position: relative;
+        top: -40px;
     }
-    .news .modul2 .news2 img:hover{
-        width: auto;
-        height: auto;
-        margin: 0; 
+    .newm2{
+        position: relative;
+        top: -80px;
     }
-
-
-
-
-    .news .modul1 .news1 h1{
-        max-width: 300px;
-       font-size: 25px;
-       top: -100px;
-       left: 30px;
+    .newm3{
+        position: relative;
+        top: -120px;
     }
-    .news .modul1 .news1 p{
-        font-size: 15px;
-        top: -100px;
-        left: 30px;
+    .news{
+        margin: 10px 0px;
     }
-    .news .modul1 .news2 h1{
-        max-width: 300px;
+    .bottext{
+        position: relative;
+        color: #fff;
+        left: 40px;
+        width: 300px;
+    }
+    .bottext h1{
+        border: none;
         font-size: 25px;
-        top: -100px;
-        left: 30px;
-     }
-     .news .modul1 .news2 p{
-         font-size: 15px;
-         top: -100px;
-         left: 30px;
-     }
-     .news .modul2 .news1 h1{
-        max-width: 300px;
-        font-size: 25px;
-        top: -100px;
-        left: 30px;
-     }
-     .news .modul2 .news1 p{
-         font-size: 15px;
-         top: -100px;
-         left: 30px;
-     }
-     .news .modul2 .news2 h1{
-        max-width: 300px;
-        font-size: 25px;
-        top: -100px;
-        left: 30px;
-     }
-     .news .modul2 .news2 p{
-         font-size: 15px;
-         top: -100px;
-         left: 30px;
-     }
+    }
+
      .bottom .mbot{
         display: block;
         margin: auto;
-  
      }
      .bottom .infos{
         width: 250px;
-        margin-left: 15px;
+        margin-left: 6vw;
     }
     .bottom .infos h1{
         font-size: 25px;

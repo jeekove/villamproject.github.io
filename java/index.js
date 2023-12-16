@@ -25,18 +25,14 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(switchImage, 7000);
 });
 
-function animateValue(obj, start, end, duration) {
-    let startTimestamp = null;
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      obj.innerHTML = Math.floor(progress * (end - start) + start);
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
-      }
-    };
-    window.requestAnimationFrame(step);
-  }
+const menuButton = document.getElementById("menuButton");
+const menu = document.getElementById("menu");
+
+menuButton.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+menu.addEventListener("click", () => {
+    menu.classList.remove("active");
+});
   
-  const obj = document.getElementById("value");
-  animateValue(obj, 100, 0, 5000);
